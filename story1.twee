@@ -1,15 +1,41 @@
 :: StoryData
 {
-  "ifid": "A213BCD8-4DE3-46C5-841F-ADD1E360D83E"
+  "ifid": "A213BCD8-4DE3-46C5-841F-ADD1E360D83E",
+  "start": "Welcome"
 }
 
-::StoryTitle
-Test Story
+:: StoryTitle
+Ada's first story
 
-::Start
-This is the first passge
+:: Welcome
+<label>What is your name? <br/><<textbox "$name" "">></label>
+[[Walk up the driveway|welcome_1_1]]
 
-[[Next Passage]]
+:: welcome_1_1
+You walk up the driveway.  You can see lights on inside, looks like they are home.
+[[Ring Doorbell|welcome_2_1]]
 
-::Next Passage
-Clicked the link
+
+:: welcome_2_1
+/* Doorbell */
+You show up at Ada's house, walk up to the door and ring the door bell.
+
+[[Ring again|welcome_2_2]]
+[[Wait for someone to come to the door|welcome_3_1]]
+
+:: welcome_2_2
+<<set $doorbell_again = "Again...">>
+You reach out and ring the door bell.
+
+[[Ring again|welcome_2_3]]
+[[Wait for someone to come to the door|welcome_3_1]]
+
+:: welcome_2_3
+<<set $doorbell_again += " Again...">>
+You reach out and ring the door bell... $doorbell_again
+[[Ring again|welcome_2_3]]
+[[Wait for someone to come to the door|welcome_3_1]]
+
+:: welcome_3_1
+After a few minutes, the door opens, and Ada says "Hello $name!"
+
