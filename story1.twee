@@ -1,0 +1,15 @@
+:: StoryData
+{
+  "ifid": "A213BCD8-4DE3-46C5-841F-ADD1E360D83E"
+}
+
+::StoryTitle
+Test Story
+
+::Start
+This is the first passge
+
+[[Next Passage]]
+
+::Next Passage
+Clicked the link
