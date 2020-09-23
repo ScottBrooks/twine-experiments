@@ -25,7 +25,7 @@ You show up at Ada's house, walk up to the door and ring the door bell.
 
 :: welcome_2_2
 <<set $doorbell_again = "Again...">>
-You reach out and ring the door bell.
+You reach out and ring the door bell again.
 
 [[Ring again|welcome_2_3]]
 [[Wait for someone to come to the door|welcome_3_1]]
