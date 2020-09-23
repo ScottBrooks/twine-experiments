@@ -18,7 +18,7 @@ You walk up the driveway.  You can see lights on inside, looks like they are hom
 
 :: welcome_2_1
 /* Doorbell */
-You show up at Ada's house, walk up to the door and ring the door bell.
+You reach out and ring the door bell.
 
 [[Ring again|welcome_2_2]]
 [[Wait for someone to come to the door|welcome_3_1]]
